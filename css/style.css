@@ -1,0 +1,85 @@
+body {
+	background-image: url("../img/forest.png");
+	background-color: #4E31AA;
+	margin-bottom: 5em;
+}
+
+.container {
+	box-sizing: content-box;
+	background-color: #FEFEFE;
+	width: 40em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3px;
+	box-shadow: 0px 0px 1em #888888;
+}
+
+#grid-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 0.5em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+.card-container {
+	box-sizing: content-box;
+	position: relative;
+	width: 9.35em;
+	height: 9.35em;
+}
+
+.front-card, .back-card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backface-visibility: hidden;
+	transition: transform 1s ease-out;
+	border: 4px solid #000000;
+}
+
+.front-card {
+	transform: rotateY(180deg);
+}
+
+.card-container.flipped .front-card {
+	transform: rotateY(0deg);
+}
+
+.card-container.flipped .back-card {
+	transform: rotateY(180deg);
+}
+
+.card-container img {
+	width: 100%;
+}
+
+footer {
+	position: fixed;
+	height: 4em;
+	background-color: #000000;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	color: #FFFFFF;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40%;
+}
