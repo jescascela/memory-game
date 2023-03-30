@@ -1,0 +1,23 @@
+@media (max-width: 620px) {
+	body {
+		background: url("../img/forest.png");
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		width: 20em;
+	}
+
+	.card-container {
+		width: 4.25em;
+		height: 4.25em;
+	}
+
+	#logo {
+		max-width: 80%;
+	}
+
+	footer {
+		font-size: 0.8em;
+	}
+}
